@@ -1,0 +1,10 @@
+# Модель использует прежние фиксированные версии библиотек.
+-r requirements.txt
+
+# Запуск solution.ipynb с новым Jupyter-ядром и сохранение реальных выводов ячеек.
+nbformat==5.11.1
+nbclient==0.11.0
+ipykernel==7.3.0
+ipython==9.17.1
+jupyter-client==8.10.0
+jupyter-core==5.9.1

@@ -1,0 +1,63 @@
+{
+  "candidate": "selected_top30",
+  "features": [
+    "gap_median",
+    "gap_min",
+    "gap_iqr_over_median",
+    "item_unique_share",
+    "category_entropy",
+    "location_unique_share",
+    "gap_le_10s_share",
+    "location_top_share",
+    "gap_unique_share",
+    "query_top_share",
+    "gap_cv",
+    "category_top_share",
+    "location_entropy",
+    "gap_gt_30m_share",
+    "event_entropy",
+    "item_entropy",
+    "query_unique_share",
+    "item_top_share",
+    "item_location_nunique",
+    "n_item_view",
+    "gap_max",
+    "category_unique_share",
+    "event_top_share",
+    "event_unique_share",
+    "gap_mean",
+    "n_seller_page_view",
+    "gap_std",
+    "gap_mode_share",
+    "item_category_nunique",
+    "n_photo_swipe"
+  ],
+  "catboost_params": {
+    "iterations": 500,
+    "depth": 6,
+    "learning_rate": 0.05,
+    "l2_leaf_reg": 5,
+    "loss_function": "Logloss",
+    "auto_class_weights": "Balanced",
+    "random_seed": 0,
+    "thread_count": 4,
+    "verbose": false,
+    "allow_writing_files": false
+  },
+  "selection_rule": "Fewest features within 0.015 of best mean development precision",
+  "development_folds": [
+    [
+      "2026-04-12",
+      "2026-04-15"
+    ],
+    [
+      "2026-04-15",
+      "2026-04-17"
+    ]
+  ],
+  "ranking_train_before": "2026-04-12",
+  "final_holdout": [
+    "2026-04-17",
+    "2026-04-20"
+  ]
+}

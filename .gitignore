@@ -1,0 +1,7 @@
+.DS_Store
+.idea/
+__pycache__/
+*.pyc
+
+bot_detection_challenge/artifacts/
+bot_detection_challenge/submissions/
